@@ -67,7 +67,7 @@
         console.log(capitalize("sfhhfh"));
 
         //----------------------------------//
-        */
+        
         //Returns the last letter of a string
         function lastletter(words) {
             let str = words;
@@ -77,6 +77,20 @@
 
         console.log(lastletter("HakdoG"));
         console.log(lastletter("Hamburger"));
+
+        //----------------------------------//
+        */
+        //FIzzBuzz; print "fizz" when a number is divisible by 3, "buzz" by 5, and "FizzBuzz" for both.
+            let answer1 = parseInt(prompt("Please enter the limit of number to FizzBuzz:"));
+            for (i=1;i <= answer1;i++) {
+             if (i % 3 === 0 && i % 5 === 0) {console.log("FizzBuzz");} 
+                else if (i % 5 === 0) {console.log("Buzz");}
+                else if (i % 3 === 0) {console.log("Fizz");}
+                else {console.log(i);}
+            }
+
+            
+        
     </script>
 </body>
 </html>

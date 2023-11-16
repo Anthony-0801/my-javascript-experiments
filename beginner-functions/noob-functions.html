@@ -11,6 +11,7 @@
     <hr>
     <script>
         //Returning my name with welcoming message
+        /*
         function name(yourName) {
             return "Welcome and Hello to my World, " + yourName;
         }
@@ -37,7 +38,45 @@
         alert(min(12, 32)); 
 
         //----------------------------------//
+        
+        //Enter a number and add it to 7
+        function add7 (num) {
+            return num+7;
+        }
 
+        console.log(add7(4));
+
+        //----------------------------------//
+        
+        //Multiplying two numbers
+        function multiply (num1, num2) {
+            return num1 * num2;
+        }
+        console.log(multiply(3, 6));
+
+        //----------------------------------//
+
+        //Capitalize only the first letter of a sentence
+        function capitalize (sentence) {
+            const str = sentence;
+            sentence = str.charAt(0).toUpperCase()+str.slice(1);
+            return sentence;
+        }
+
+        console.log(capitalize("aHHAH"));
+        console.log(capitalize("sfhhfh"));
+
+        //----------------------------------//
+        */
+        //Returns the last letter of a string
+        function lastletter(words) {
+            let str = words;
+            words = str.slice(-1);
+            return words;
+        }
+
+        console.log(lastletter("HakdoG"));
+        console.log(lastletter("Hamburger"));
     </script>
 </body>
 </html>

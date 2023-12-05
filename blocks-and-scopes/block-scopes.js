@@ -28,3 +28,24 @@ function callMyNightSky () {
 }
 
 console.log(callMyNightSky());
+
+//----------------------------------------------------------------------------------------------//
+
+//Block scope is a variable or some line of codes that can only be accessible to the code within the curly braces, they are also known as local variables.
+// Some are examples below:
+const logSkyColor = () => {
+    let color = 'blue'; 
+    console.log(color); // Prints "blue"
+  };
+  
+  logSkyColor(); // Prints "blue"
+  console.log(color); // throws a ReferenceError
+
+  //Another example
+  function logVisibleLightWaves() {
+    const lightWaves = "Moonlight";
+    console.log(lightWaves); //will print "Moonlight"
+  }
+  
+  console.log(logVisibleLightWaves()); //prints "undefined"
+  console.log(lightWaves); //prints "Reference Error"

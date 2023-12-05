@@ -1,0 +1,8 @@
+//Benefits of Good Scoping
+console.log("Makes your code more legible, since the blocks will organize your code into discrete sections.");
+console.log("Make your code more understandable, since it clarifies which variables are associated with different parts of the program rather than having to keep track of them line after line!");
+console.log("It's easier to maintain your code");
+console.log("It will save memory/ies")
+
+
+console.log("It is best not to define variables in the global scope");

@@ -30,3 +30,21 @@ for (let a = 0; a < bobsFollowers.length; a++) {
   }
 };
 
+//using while loop to iterate until there's a spade
+const cards = ["diamond", "spade", "heart", "club"];
+let currentCard;
+while (currentCard !== "spade") {
+ currentCard = cards[Math.floor(Math.random() * 4)];
+  console.log(currentCard);
+};
+
+
+//using do while to check if the added sugar adds and does not exceeds our sugar levels heh
+let cupsOfSugarNeeded = 3;
+let cupsAdded = 0;
+do {
+  cupsAdded++
+  console.log(cupsAdded + " cups was added.")
+} while (cupsAdded < cupsOfSugarNeeded)
+
+

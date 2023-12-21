@@ -128,3 +128,37 @@ let remotelyDisable = objec => {
 greenEnergy(spaceship);
 remotelyDisable(spaceship);
 console.log(spaceship);
+
+//looping through objects
+let sspaceship = {
+  crew: {
+    captain: { 
+        name: 'Lily', 
+        degree: 'Computer Engineering', 
+        cheerTeam() { console.log('You got this!') } 
+        },
+    'chief officer': { 
+        name: 'Dan', 
+        degree: 'Aerospace Engineering', 
+        agree() { console.log('I agree, captain!') } 
+        },
+    medic: { 
+        name: 'Clementine', 
+        degree: 'Physics', 
+        announce() { console.log(`Jets on!`) } },
+    translator: {
+        name: 'Shauna', 
+        degree: 'Conservation Science', 
+        powerFuel() { console.log('The tank is full!') } 
+        }
+    }
+}; 
+
+for (let crewMember in sspaceship.crew) {
+  console.log(`${crewMember}: ${sspaceship.crew[crewMember].name}`);
+};
+
+console.log('\n');
+for (let crewDeg in sspaceship.crew) {
+  console.log(`${sspaceship.crew[crewDeg].name}: ${sspaceship.crew[crewDeg].degree}`)
+};

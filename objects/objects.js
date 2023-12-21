@@ -22,3 +22,26 @@ let spaceship = {
   console.log("Flightpath of the ship: ", planetArray);
 
 //using bracket notation
+let spacesship = {
+  'Fuel Type' : 'Turbo Fuel',
+  'Active Mission' : true,
+  homePlanet : 'Earth', 
+  numCrew: 5
+ };
+
+let propName =  'Active Mission';
+let isActive = spacesship['Active Mission'];
+console.log(isActive);
+
+//using assignment operator = 
+let spaceship = {
+  'Fuel Type' : 'Turbo Fuel',
+  homePlanet : 'Earth',
+  color: 'silver',
+  'Secret Mission' : 'Discover life outside of Earth.'
+};
+
+spaceship.color = 'glorious gold';
+spaceship.numEngines = 1,2,3,4,5,6,7,8,9,10;
+delete spaceship['Secret Mission'];
+console.log(spaceship);

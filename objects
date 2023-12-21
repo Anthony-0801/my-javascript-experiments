@@ -1,0 +1,9 @@
+//creating an object literal
+// Write your fasterShip object literal below
+let fasterShip = {
+    'Fuel Type': 'Turbo Fuel',
+    color: 'silver'
+  }
+
+//accessing properties of an object
+//first method is the use of dot notation .()

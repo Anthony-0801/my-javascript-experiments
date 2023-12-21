@@ -80,3 +80,37 @@ const startsWithS = animalss.findIndex(anim => {
 });
 console.log("Find animals that starts with letter 's': " + startsWithS);
 
+
+//.reduce() 
+//.reduce() method returns a single value after iterating through the elements of an array, thereby reducing the array.
+const numbersss = [1, 2, 4, 10];
+
+const summedNums = numbersss.reduce((accumulator, currentValue) => {
+  return accumulator + currentValue
+})
+
+console.log(summedNums) // Output: 17
+
+//another example
+const newNumbers = [1, 3, 5, 7];
+const newSum = newNumbers.reduce((accumulator, currentValue) => {
+  console.log("The value of accumulator: ", accumulator);
+  console.log("The value of currentValue: ", currentValue);
+    return accumulator + currentValue;
+}, 10);
+console.log("The sum of accumulator and currentValue: ", newSum);
+
+
+//more iterator methods
+const worrds = ['unique', 'uncanny', 'pique', 'oxymoron', 'guise'];
+
+// Use .some to check for even numbers in the array
+console.log(worrds.some((word) => {
+  return word.length < 6;
+}));
+
+// Use filter to create a new array
+const interestingWords = worrds.filter(woord => {return woord.length > 5;});
+console.log(interestingWords);
+
+console.log(interestingWords.every((word) => { return word.length > 5} ));

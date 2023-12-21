@@ -68,3 +68,15 @@ const lessThanTen = jumbledNums.findIndex(num => {
 });
 
 //another example
+const animalss = ['hippo', 'tiger', 'lion', 'seal', 'cheetah', 'monkey', 'salamander', 'elephant'];
+
+const foundAnimal = animalss.findIndex( ani => {
+  return ani === 'elephant';
+});
+console.log("Find the index of the 'elephant' element: " + foundAnimal);
+
+const startsWithS = animalss.findIndex(anim => {
+  return anim[0] === 's';
+});
+console.log("Find animals that starts with letter 's': " + startsWithS);
+

@@ -1,3 +1,4 @@
+//  IVE CHANGED THE VARIABLE NAMES SO THAT THERE'S NO ERROR TO OCCUR
 // The this keyword references the calling object which provides access to the calling object’s properties.
 const goat = {
     dietType: 'herbivore',
@@ -63,7 +64,7 @@ const goat = {
   console.log(robots.energyLevel);
 
   //Along with getter methods, we can also create setter methods which reassign values of existing properties within an object.
-  const robot = {
+  const robotss = {
     _model: '1E78V2',
     _energyLevel: 100,
     _numOfSensors: 15,
@@ -84,8 +85,8 @@ const goat = {
     }
   };
   
-  robot.numOfSensors = 100;
-  console.log(robot.numOfSensors);
+  robotss.numOfSensors = 100;
+  console.log(robotss.numOfSensors);
   
   
 //Factory functions  -  A factory function is a function that returns an object and can be reused to make multiple object instances. 
@@ -105,6 +106,39 @@ const monsterFactory = (name, age, energySource, catchPhrase) => {
   ghost.scare(); // 'BOO!'
 
   //another example
+  function robotFactory (model, mobile) {
+    return {
+      model: model,
+      mobile: mobile,
+      beep() {
+        console.log('Beep Boop');
+      }
+    }
+  };
+  
+  const tinCan = robotFactory('P-500', true);
+  tinCan.beep();
+
+
+  //Property Value SHorthand
+  //Without property value shorthand
+  const monstersFactory = (name, age) => {
+    return { 
+      name: name,
+      age: age
+    }
+  };
+//With property value shorthand
+const monsterssFactory = (name, age) => {
+    return { 
+      name,
+      age 
+    }
+  };
+
+
+
+  //Destructured assignment
   
   
   

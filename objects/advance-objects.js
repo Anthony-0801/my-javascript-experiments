@@ -138,7 +138,43 @@ const monsterssFactory = (name, age) => {
 
 
 
-  //Destructured assignment
+  //Destructured assignment - we can use this when we want to extract key-value pairs from objects and save them as variables.
+  const vampire = {
+    name: 'Dracula',
+    residence: 'Transylvania',
+    preferences: {
+      day: 'stay inside',
+      night: 'satisfy appetite'
+    }
+  };
+  
+  //Without destructured assignment
+  const residence = vampire.residence; 
+  console.log(residence); // Prints 'Transylvania' 
+  //With destructured assignment
+  const { residences } = vampire; //I've changed variable name so that there's no error
+console.log(residence); // Prints 'Transylvania'
+//using destructured assignment in a nested propoerties of an object
+const { day } = vampire.preferences; 
+console.log(day); // Prints 'stay inside'
+
+//another example
+const robotsss = {
+    model: '1E78V2',
+    energyLevel: 100,
+    functionality: {
+      beep() {
+        console.log('Beep Boop');
+      },
+      fireLaser() {
+        console.log('Pew Pew');
+      },
+    }
+  };
+  
+  const { functionality } = robotsss;
+  functionality.beep();
+
   
   
   

@@ -82,3 +82,11 @@ for (num = -25000; num <= 30000; num++) {
 }
 
 //challenge 9
+function printArray(arr) {
+    // Enter code below
+for (let num = 0; num <=arr.length -1; num +=1) {
+    console.log(arr[num]);
+    };
+}
+
+//challenge 10

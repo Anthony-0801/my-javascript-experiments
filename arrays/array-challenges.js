@@ -71,3 +71,14 @@ for(let num =4; num<=22; num++){
 }
 
 //challenge 8
+function addOddInts () {
+    // Enter code below
+let sum = 0;
+for (num = -25000; num <= 30000; num++) {
+    if (num % 2 !== 0) {
+         sum += num;
+    }
+}return (sum); 
+}
+
+//challenge 9

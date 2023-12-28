@@ -97,3 +97,15 @@ for (let num = 0; num <= arr.length; num +=1) { if (arr[num] > 0) {
 }
 };
 }
+
+//challenge 11
+function bePositive (arr) {
+    // Enter code below
+let newArr = [];
+for (let num = 0; num < arr.length; num++)
+    { if (arr[num] < 0) {
+        newArr.push(-arr[num]);
+    } else { newArr.push(arr[num]);
+    }
+    } return newArr;
+}

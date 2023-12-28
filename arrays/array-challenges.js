@@ -41,3 +41,14 @@ for (num = 7; num <=62; num++) {
 }
 
 //challenge 5
+function countdownBy5 () {
+    // Enter code below
+let num;
+for (num = 50; num > 0; num--) {
+    if (num %5 == 0) {
+        console.log(num)
+    }
+};
+}
+
+//challenge 6

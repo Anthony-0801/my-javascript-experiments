@@ -109,3 +109,13 @@ for (let num = 0; num < arr.length; num++)
     }
     } return newArr;
 }
+
+//challenge 12
+function squareEval (arr) {
+    // Enter code below
+let newArr = [];
+for (let num = 0; num < arr.length; num++) { 
+    newArr.push(arr[num] * arr[num]);
+}
+return newArr;
+}

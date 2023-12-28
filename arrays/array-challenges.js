@@ -59,3 +59,15 @@ console.log(result);
 }
 
 //challenge 7
+function printEven4to22() {
+    // Enter code below
+let sum = 0;
+for(let num =4; num<=22; num++){
+    if (num % 2 == 0) {
+        console.log(num);
+         sum += num;
+    }
+}  return sum;
+}
+
+//challenge 8

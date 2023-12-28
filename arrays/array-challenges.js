@@ -52,3 +52,10 @@ for (num = 50; num > 0; num--) {
 }
 
 //challenge 6
+function firstPlusLength (arr) {
+    // Enter code below
+let result = arr[0] + arr.length;
+console.log(result);
+}
+
+//challenge 7

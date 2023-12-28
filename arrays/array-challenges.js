@@ -90,3 +90,10 @@ for (let num = 0; num <=arr.length -1; num +=1) {
 }
 
 //challenge 10
+function printPositives (arr) {
+    // Enter code below
+for (let num = 0; num <= arr.length; num +=1) { if (arr[num] > 0) {
+    console.log(arr[num])
+}
+};
+}

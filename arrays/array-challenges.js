@@ -119,3 +119,15 @@ for (let num = 0; num < arr.length; num++) {
 }
 return newArr;
 }
+
+//challenge 13
+function printPositiveIndex(arr) {
+    // Enter code below
+for (let num = 0; num < arr.length; num+= 1) {
+    if (arr[num] > 0) {
+        console.log(num);
+    }
+};
+}
+
+//challenge 14

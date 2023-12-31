@@ -202,3 +202,18 @@ return arr;
 }
 
 //challenge 20
+function valuesGreaterThanSecond (arr) {
+    // Enter code below
+let greatValues = [];
+let sum = 0;
+for (let num = 0; num < arr.length; num++) {
+    if (arr[num] > arr[1]) {
+        greatValues.push(arr[num]);
+        sum += arr[num];
+    }
+}
+console.log(greatValues.join(' '));
+return sum;
+}
+
+//challenge 21

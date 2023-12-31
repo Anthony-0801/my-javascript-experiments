@@ -161,3 +161,15 @@ return max;
 }
 
 //challenge 17
+function findMin (arr) {
+    // Enter code below
+let min = arr[0];
+for (let num = 1; num < arr.length; num++) {
+    if (arr[num] < min) {
+        min = arr[num];
+    }
+}
+return min;
+}
+
+//challenge 18

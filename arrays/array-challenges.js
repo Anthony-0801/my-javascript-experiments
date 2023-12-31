@@ -231,4 +231,11 @@ return newArray;
 }
 
 //challenge 23
-
+function greaterThanSecond (arr) {
+    // Enter code below
+if (arr.length < 2) {
+    return false;
+}   
+let newArray = arr.filter(value=> value > arr[1]);
+return newArray;
+}

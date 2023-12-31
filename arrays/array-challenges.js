@@ -224,4 +224,11 @@ return newArray;
 }
 
 //challenge 22
+function addSevenToMost (arr) {
+    // Enter code below
+let newArray = arr.slice(1).map(value => value + 7);
+return newArray;
+}
+
+//challenge 23
 

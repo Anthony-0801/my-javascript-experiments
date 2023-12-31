@@ -173,3 +173,32 @@ return min;
 }
 
 //challenge 18
+function findMinMax (arr) {
+    // Enter code below
+let min = arr[0];
+let max = arr[0];
+
+
+for (let num = 1; num < arr.length; num++) {
+    if (arr[num] < min) {
+        min = arr[num];}
+        
+    if (arr[num] > max)  {
+        max = arr[num];}
+}
+
+return[min, max];
+}
+
+//challenge 19
+function countPositives (arr) {
+    // Enter code below
+let count = 0;
+for (let num = 0; num < arr.length; num++) { if (arr[num] > 0) {
+    count++;
+}
+} arr[arr.length -1] = count;
+return arr;
+}
+
+//challenge 20

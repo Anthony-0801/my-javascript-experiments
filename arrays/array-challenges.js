@@ -239,3 +239,13 @@ if (arr.length < 2) {
 let newArray = arr.filter(value=> value > arr[1]);
 return newArray;
 }
+
+//challenge 24
+function swapFirstLast (arr) {
+    // Enter code below
+[arr[0], arr[arr.length -1]] = [arr [arr.length - 1], arr[0]]; 
+return arr;
+}
+
+//challenge 25
+

@@ -140,3 +140,12 @@ for (let num = 0; num < arr.length; num +=1) {if (arr[num] > 0) {
 }
 return newArr;
 }
+
+//challenge 15
+function findSum (arr) {
+    // Enter code below
+let sum = 0;
+for (let num = 0; num < arr.length; num++) { sum += arr[num]; } return sum;
+}
+
+//challenge 16

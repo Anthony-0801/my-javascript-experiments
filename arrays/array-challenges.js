@@ -247,5 +247,5 @@ function swapFirstLast (arr) {
 return arr;
 }
 
-//challenge 25
+//The end!!!
 

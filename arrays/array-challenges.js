@@ -131,3 +131,12 @@ for (let num = 0; num < arr.length; num+= 1) {
 }
 
 //challenge 14
+function noNeg (arr) {
+    // Enter code below
+let newArr = [];
+for (let num = 0; num < arr.length; num +=1) {if (arr[num] > 0) {
+    newArr.push(arr[num]);
+} else {newArr.push(0);}
+}
+return newArr;
+}

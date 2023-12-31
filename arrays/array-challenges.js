@@ -217,3 +217,11 @@ return sum;
 }
 
 //challenge 21
+function thisLengthThatValue (num1, num2) {
+    // Enter code below
+let newArray = new Array(num1).fill(num2);
+return newArray;
+}
+
+//challenge 22
+

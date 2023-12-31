@@ -149,3 +149,15 @@ for (let num = 0; num < arr.length; num++) { sum += arr[num]; } return sum;
 }
 
 //challenge 16
+function findMax (arr) {
+    // Enter code below
+let max = arr[0];
+for (let num = 0; num < arr.length; num++) {
+    if (arr[num] > max) {
+        max = arr[num];
+    }
+}
+return max;
+}
+
+//challenge 17

@@ -38,3 +38,17 @@ function printSumArray(x){
     return sum;
   }
   console.log( printSumArray([1,2,3]) ); // should log 6
+
+
+
+//LargestElement
+function largestElement(x){
+    var max = x[0];
+    for(var i=1; i<x.length; i++){
+      if(x[i] > max){
+        max = x[i];
+      }
+    }
+    return max;
+  }
+  console.log( largestElement([1,30,5,7]) ); // should log 30

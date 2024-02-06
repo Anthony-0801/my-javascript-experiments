@@ -12,6 +12,7 @@ function sumAll(a, b) {
 }
 
 
+
 /* Dirty Version
 function abc(a,b,   c,d, e){
    var x = a+b;
@@ -29,3 +30,42 @@ function abc(a, b, c, d, e) {
     return x - y + z;
 }
 abc(3, 5, 10, 3, 7);
+
+
+
+/* Dirty Version
+function abc(a,b,c,   d, e) {
+   for(var i=0; i<a; i++){
+b += i;
+}  return b+d; }
+abc(1,2,3,4, 5)
+*/
+
+// Clean Version
+function abc(a, b, c, d, e) {
+    for(var i = 0; i < a; i++) {
+        b += i;
+    } return b + d;
+}
+abc(1, 2, 3, 4, 5);
+
+
+
+
+/* Dirty Version
+function compare(   a,b  ) {
+  if(a<b) return b
+       else { return a;
+} }
+compare(2,   3 );
+*/
+
+// Clean Version
+function compare(a, b) {
+    if(a < b) {
+        return b;
+    } else {
+        return a;
+    }
+}
+compare(2, 3);

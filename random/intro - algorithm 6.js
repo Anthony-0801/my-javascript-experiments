@@ -7,12 +7,12 @@ function resetNegatives(x){
     }
     return x;
 }
-y = resetNegatives([1,2,-1, -3]);
-console.log(y); // should log [1,2,0,0]
+y = resetNegatives([12,57,-1, -3]);
+console.log(y); // should log [12,57,0,0]
 y = resetNegatives([2,5,8]);
 console.log(y); // should log [2,5,8]
-y = resetNegatives([-1,-3,-5]);
-console.log(y); // should log [0,0,0]
+y = resetNegatives([-1,-3,-5,-11]);
+console.log(y); // should log [0,0,0,0]
 
 
 
@@ -26,10 +26,10 @@ function moveForward(x){
 }
 y = moveForward([1,2,3]);
 console.log(y); // should log [2,3,0]
-y = moveForward([2,5,8]);
-console.log(y); // should log [5,8,0]
-y = moveForward([42,72,23]);
-console.log(y); // should log [72,23,0]
+y = moveForward([12,33,84]);
+console.log(y); // should log [33,84,0]
+y = moveForward([412,72,43]);
+console.log(y); // should log [72,43,0]
 
 
 
@@ -44,10 +44,10 @@ function swap(x){
 }
 y = swap([1,2,3,4,5,6]);
 console.log(y); // should log [6,2,4,3,5,1]
-y = swap([2,5,8]);
-console.log(y); // should log [8,5,2]
-y = swap([42,72,23, 1, 2, 3]);
-console.log(y); // should log [3,72,2,1,23,42]
+y = swap([2,5,8,234, 15, 38]);
+console.log(y); // should log [38, 5, 234, 8, 15, 2]
+y = swap([42, 72, 34, 23, 77, 1, 2, 3]);
+console.log(y); // should log [3, 72, 1, 23, 77, 34, 2, 42]
 
 
 
@@ -63,7 +63,7 @@ y = repeatTwice([4,"Ulysses", 42, false]);
 console.log(y); // should log [4,4, "Ulysses", "Ulysses", 42, 42, false, false]
 y = repeatTwice([2,5,8]);
 console.log(y); // should log [2,2,5,5,8,8]
-y = repeatTwice([42,72,23]);
-console.log(y); // should log [42,42,72,72,23,23]
-y = repeatTwice([1,2,3,4,5,6]);
-console.log(y); // should log [1,1,2,2,3,3,4,4,5,5,6,6]
+y = repeatTwice([42,72, "hello", 23]);
+console.log(y); // should log [42,42,72,72, "hello", "hello", 23, 23]
+y = repeatTwice([1,2,3, "hahaha",4,5,6]);
+console.log(y); // should log [1, 1, 2, 2, 3, 3, "hahaha", "hahaha", 4, 4, 5, 5, 6, 6]

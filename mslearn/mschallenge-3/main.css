@@ -21,9 +21,23 @@
   .light-theme {
     --bg: var(--green);
     --fontColor: var(--white);
+    --btnBg: var(--white);
+    --btnFontColor: var(--green);
   }
   
   .dark-theme {
     --bg: var(--black);
     --fontColor: var(--white);
+    --btnBg: var(--green);
+    --btnFontColor: var(--white);
+  }
+
+  .theme-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+    padding: 10px;
+    font-weight: bold;
   }

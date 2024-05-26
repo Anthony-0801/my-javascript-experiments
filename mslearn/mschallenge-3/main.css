@@ -20,10 +20,10 @@
   
   .light-theme {
     --bg: var(--green);
-    --fontColor: var(--black);
+    --fontColor: var(--white);
   }
   
   .dark-theme {
     --bg: var(--black);
-    --fontColor: var(--green);
+    --fontColor: var(--white);
   }
